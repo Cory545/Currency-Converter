@@ -7,24 +7,65 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Placeholder for a potential input text, for customer to potentially enter the amount they would like to convert-->
-    <input type="text">
-    <!--Placeholder for a potential selector for user to pick which currency they're entering.-->
-    <select name="cars" id="cars">
-        <option>Great British Pound</option>
-        <option>Euros</option>
-        <option>Dollars</option>
-      </select>
+      <!--Placeholder for a potential input text, for customer to potentially enter the amount they would like to convert-->
+            <label for="amount">Enter Amount:</label>
+            <input type="text" id="inputAmount">
 
+      <!--Placeholder for a potential selector for user to pick which currency they're entering.-->
+            <label for="fromCurrency" id="convertFromLabel">From Currency:</label>
+                  <select name="currenciesFrom" id="convertFromCurrencyType">
+                        <option value="AUD">AUD-Australian dollar</option>
+                        <option value="BRL">BRL-Brazillian Real</option>
+                        <option value="CAD">CAD-Canadian Dollar</option>
+                        <option value="CHF">CHF-Swiss Franc</option>
+                        <option value="CNY">CNY-Chinese Yuan</option>
+                        <option value="EUR">EUR-Euro</option>
+                        <option value="GBP">GBP-British Pound Sterling</option>
+                        <option value="HKD">HKD-Hong Kong Dollar</option>
+                        <option value="INR">INR-Indian Rupee</option>
+                        <option value="JPY">JPY-Japanese Yen</option>
+                        <option value="KRW">KRW-South Korean Won</option>
+                        <option value="MXN">MXN-Mexican Peso</option>
+                        <option value="NOK">NOK-Norwegian Krone</option>
+                        <option value="NZD">NZD-New Zealand Dollar</option>
+                        <option value="RUB">RUB-Russian Ruble</option>
+                        <option value="SEK">SEK-Swedish Krona</option>
+                        <option value="SHD">SHD-Singapore dollar</option>
+                        <option value="TRY">TRY-Turkish Lira</option>
+                        <option value="USD">USD-United States Dollar</option>
+                        <option value="ZAR">ZAR-South African Rand</option>
+                  </select>
 
-<!--Placeholder for the user to select what they would like to convert their currency into.-->
-      <select>
-        <option>Great British Pound</option>
-        <option>Euros</option>
-        <option>Dollars</option>
-      </select>
-<!--Placeholder, shows how much of the currency they would like to convert into, the amount it would be.-->
-      <h1>This is where the amount of money that their own would convert into</h1>
+      <!--Button to allow user to have control over when the conversion takes place-->
+      <button id="convertButton">Convert </button>
+
+      <!--Placeholder for the user to select what they would like to convert their currency into.-->
+            <label for="toCurrency" id="convertToLabel">To Currency:</label>      
+                  <select name="currenciesTo" id="convertToCurrencyType">
+                        <option value="AUD">AUD-Australian dollar</option>
+                        <option value="BRL">BRL-Brazillian Real</option>
+                        <option value="CAD">CAD-Canadian Dollar</option>
+                        <option value="CHF">CHF-Swiss Franc</option>
+                        <option value="CNY">CNY-Chinese Yuan</option>
+                        <option value="EUR">EUR-Euro</option>
+                        <option value="GBP">GBP-British Pound Sterling</option>
+                        <option value="HKD">HKD-Hong Kong Dollar</option>
+                        <option value="INR">INR-Indian Rupee</option>
+                        <option value="JPY">JPY-Japanese Yen</option>
+                        <option value="KRW">KRW-South Korean Won</option>
+                        <option value="MXN">MXN-Mexican Peso</option>
+                        <option value="NOK">NOK-Norwegian Krone</option>
+                        <option value="NZD">NZD-New Zealand Dollar</option>
+                        <option value="RUB">RUB-Russian Ruble</option>
+                        <option value="SEK">SEK-Swedish Krona</option>
+                        <option value="SHD">SHD-Singapore dollar</option>
+                        <option value="TRY">TRY-Turkish Lira</option>
+                        <option value="USD">USD-United States Dollar</option>
+                        <option value="ZAR">ZAR-South African Rand</option> 
+                  </select>
+
+      <!--Placeholder, shows how much of the currency they would like to convert into, the amount it would be.-->
+            <h1 id="newCurrencyValueDisplay">This is where the amount of money that their own would convert into</h1>
 
 <script src="script.js"></script>
 </body>
